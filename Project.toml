@@ -1,0 +1,8 @@
+name = "MyStatsPackage"
+uuid = "8e7ec15f-ce20-4124-8120-162cbbe3678b"
+authors = ["langestroop <alberto.mariola@icloud.com>"]
+version = "0.1.0"
+
+[deps]
+ProgressMeter = "92933f4c-e287-5a05-a399-4b506db050ca"
+
