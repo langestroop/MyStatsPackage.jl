@@ -51,3 +51,13 @@ StatResult([10,500.]) # <1>
 function tstat(x)
     return StatResult(length(x),rse_tstat(x))
 end
+
+#---
+# adding the new function: 
+
+function printOwner()
+
+    x = print("Welcome, this is the first test pakcage by: langestroop");
+    return x
+
+end 
