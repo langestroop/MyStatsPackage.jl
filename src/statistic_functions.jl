@@ -2,6 +2,7 @@
 using ProgressMeter
 import Base: length
 function rse_sum(x)
+    @assert all(!isnan,x) "Watch out, there might be NaNs"
     s = 0
     @showprogress for k = eachindex(x)
         s = s+x[k]
