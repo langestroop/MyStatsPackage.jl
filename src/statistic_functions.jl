@@ -62,3 +62,8 @@ function printOwner()
     return x
 
 end 
+
+function printContributor()
+
+    println("Hey, a new contributor is working on your package: emanuel-kopp")
+end
