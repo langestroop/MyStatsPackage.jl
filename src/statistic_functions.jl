@@ -4,7 +4,7 @@ import Base: length
 function rse_sum(x)
     @assert all(!isnan, x) "Watch out, there might be NaNs"
     s = 0
-    @showprogress for k = eachindex(x)
+    @showprogress for k in eachindex(x)
         s = s + x[k]
     end
     return s
@@ -26,7 +26,7 @@ end
 rse_std([1, 2, 3]) == 1
 
 #----
-function rse_tstat(x; σ=rse_std(x))
+function rse_tstat(x; σ = rse_std(x))
     return rse_mean(x) ./ (σ / sqrt(length(x)))
 end
 
@@ -44,7 +44,7 @@ Base.length(s::StatResult) = s.n
 StatResult(x) = StatResult(x, length(x))
 
 StatResult(x, n) = StatResult(x, n, rse_std(x))
-StatResult(x, n, std) = StatResult(x, n, std, rse_tstat(x; σ=std))
+StatResult(x, n, std) = StatResult(x, n, std, rse_tstat(x; σ = std))
 
 
 StatResult([10, 500.0]) # <1>
