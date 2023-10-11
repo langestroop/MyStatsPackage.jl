@@ -1,6 +1,35 @@
-#---
 using ProgressMeter
 import Base: length
+
+"""
+    rse_sum(V::Vector)::Real
+
+Return cumsum of all elements included in a vector .
+
+# Arguments
+
+- `V` -- Vector of floats/ints
+
+# Output
+
+A real number representing the cumulative sum of all the vectro elements
+
+# Notes
+
+Make sure not to include NaNs or carachter vectros
+
+# Examples
+
+```julia-repl
+julia> rse_mean([1,5,6])
+12
+
+julia> rse_mean(1:36)
+666
+\```
+
+See also rse_mean, rse_std, rse_tstat 
+"""
 function rse_sum(x)
     @assert all(!isnan, x) "Watch out, there might be NaNs"
     s = 0
@@ -12,6 +41,7 @@ end
 
 rse_sum(1:36) == 666
 #---
+
 
 function rse_mean(x)
     return rse_sum(x) / length(x)
