@@ -1,10 +1,13 @@
+#--- Packages 
 using ProgressMeter
 import Base: length
+
+#--- Functions
 
 """
     rse_sum(V::Vector)::Real
 
-Return cumsum of all elements included in a vector .
+Return the sum of all elements included in a vector .
 
 # Arguments
 
@@ -12,11 +15,11 @@ Return cumsum of all elements included in a vector .
 
 # Output
 
-A real number representing the cumulative sum of all the vectro elements
+A real number representing the sum of all the vectro elements
 
 # Notes
 
-Make sure not to include NaNs or carachter vectros
+Make sure not to include NaNs or character vectors
 
 # Examples
 
