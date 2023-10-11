@@ -1,0 +1,3 @@
+var documenterSearchIndex = {"docs":
+[{"location":"","page":"Home","title":"Home","text":"rse_sum","category":"page"},{"location":"#MyStatsPackage.rse_sum","page":"Home","title":"MyStatsPackage.rse_sum","text":"rse_sum(V::Vector)::Real\n\nReturn the sum of all elements included in a vector .\n\nArguments\n\nV – Vector of floats/ints\n\nOutput\n\nA real number representing the sum of all the vectro elements\n\nNotes\n\nMake sure not to include NaNs or character vectors\n\nExamples\n\njulia> rse_mean([1,5,6])\n12\n\njulia> rse_mean(1:36)\n666\n\nSee also rsemean, rsestd, rse_tstat \n\n\n\n\n\n","category":"function"}]
+}

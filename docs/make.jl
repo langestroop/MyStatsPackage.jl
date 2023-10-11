@@ -6,4 +6,5 @@ makedocs(
         "Home" => "index.md",
         "Showcase" => "showcase.md",
     ],
+    remotes = nothing
 )
